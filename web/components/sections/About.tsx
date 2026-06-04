@@ -20,9 +20,9 @@ export function About() {
           </h2>
           <p className="mt-6 text-foreground/70">
             Every sound you hear is generated live by a signal graph wired by
-            hand: oscillators feed an amplitude envelope, then a low-pass filter,
-            then a feedback delay, before reaching your speakers. Nothing is
-            pre-recorded.
+            hand: oscillators feed an amplitude envelope, then a low-pass
+            filter, then a feedback delay, before reaching your speakers.
+            Nothing is pre-recorded.
           </p>
           <p className="mt-4 text-foreground/70">
             The visualizer is not decoration &mdash; it reads the exact same

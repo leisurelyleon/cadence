@@ -14,7 +14,11 @@ interface MagneticButtonProps {
  * An anchor that drifts toward the pointer on hover, then springs back on
  * leave. Magnetism is disabled entirely under reduced motion.
  */
-export function MagneticButton({ children, href, className }: MagneticButtonProps) {
+export function MagneticButton({
+  children,
+  href,
+  className,
+}: MagneticButtonProps) {
   const ref = useRef<HTMLAnchorElement | null>(null);
   const reducedMotion = usePrefersReducedMotion();
   const [offset, setOffset] = useState({ x: 0, y: 0 });

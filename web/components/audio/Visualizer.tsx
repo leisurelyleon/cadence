@@ -48,8 +48,18 @@ export function Visualizer({ getAnalyser, className }: VisualizerProps) {
 
     const colorsFor = (): VizColors =>
       themeRef.current === "dark"
-        ? { barLow: "#fb7185", barMid: "#a855f7", barHigh: "#22d3ee", wave: "#22d3ee" }
-        : { barLow: "#fb7185", barMid: "#a855f7", barHigh: "#7c3aed", wave: "#7c3aed" };
+        ? {
+            barLow: "#fb7185",
+            barMid: "#a855f7",
+            barHigh: "#22d3ee",
+            wave: "#22d3ee",
+          }
+        : {
+            barLow: "#fb7185",
+            barMid: "#a855f7",
+            barHigh: "#7c3aed",
+            wave: "#7c3aed",
+          };
 
     const resize = () => {
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -84,7 +94,14 @@ export function Visualizer({ getAnalyser, className }: VisualizerProps) {
         analyser.getByteFrequencyData(buffers.freq);
         analyser.getByteTimeDomainData(buffers.time);
         resize();
-        drawVisualizer(ctx, buffers.freq, buffers.time, canvas.width, canvas.height, colorsFor());
+        drawVisualizer(
+          ctx,
+          buffers.freq,
+          buffers.time,
+          canvas.width,
+          canvas.height,
+          colorsFor(),
+        );
       } else {
         drawIdle();
       }

@@ -19,14 +19,14 @@ Next.js 14 (App Router) · TypeScript · Tailwind CSS · Framer Motion · raw We
 
 ## Project structure
 
-| Path | Purpose |
-| --- | --- |
-| `web/app/` | App Router entry — layout, single-page composition, global styles |
-| `web/components/sections/` | The scroll-to-section content blocks |
-| `web/components/audio/` | Visualizer canvas, keypad, and control surfaces |
-| `web/lib/audio/` | The synth engine, voices, note tables, and types |
-| `web/lib/viz/` | Pure, theme-aware canvas draw functions |
-| `web/lib/hooks/` | Audio-engine, scroll spy, theme, reduced-motion hooks |
+| Path                       | Purpose                                                           |
+| -------------------------- | ----------------------------------------------------------------- |
+| `web/app/`                 | App Router entry — layout, single-page composition, global styles |
+| `web/components/sections/` | The scroll-to-section content blocks                              |
+| `web/components/audio/`    | Visualizer canvas, keypad, and control surfaces                   |
+| `web/lib/audio/`           | The synth engine, voices, note tables, and types                  |
+| `web/lib/viz/`             | Pure, theme-aware canvas draw functions                           |
+| `web/lib/hooks/`           | Audio-engine, scroll spy, theme, reduced-motion hooks             |
 
 ## Local development
 
@@ -40,12 +40,12 @@ Open [http://localhost:3000](http://localhost:3000) and click anywhere to start 
 
 ## Scripts
 
-| Command | Action |
-| --- | --- |
-| `npm run dev` | Start the dev server |
-| `npm run build` | Production build |
-| `npm run lint` | ESLint (next/core-web-vitals) |
-| `npm run typecheck` | TypeScript, no emit |
+| Command             | Action                        |
+| ------------------- | ----------------------------- |
+| `npm run dev`       | Start the dev server          |
+| `npm run build`     | Production build              |
+| `npm run lint`      | ESLint (next/core-web-vitals) |
+| `npm run typecheck` | TypeScript, no emit           |
 
 ## Deployment
 

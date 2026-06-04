@@ -110,10 +110,14 @@ export function Keypad({ noteOn, noteOff }: KeypadProps) {
             onPointerUp={() => lift(pad.midi)}
             onPointerCancel={() => lift(pad.midi)}
             className={`relative flex flex-1 items-end justify-center rounded-b-xl border border-foreground/15 pb-3 text-xs font-medium transition-colors ${
-              on ? "bg-accent text-background" : "bg-foreground/[0.04] text-foreground/50 hover:bg-foreground/[0.08]"
+              on
+                ? "bg-accent text-background"
+                : "bg-foreground/[0.04] text-foreground/50 hover:bg-foreground/[0.08]"
             }`}
           >
-            <span className="pointer-events-none uppercase tracking-wide">{pad.key}</span>
+            <span className="pointer-events-none uppercase tracking-wide">
+              {pad.key}
+            </span>
           </button>
         );
       })}
@@ -130,9 +134,14 @@ export function Keypad({ noteOn, noteOff }: KeypadProps) {
             onPointerDown={(event) => onDown(event, pad.midi)}
             onPointerUp={() => lift(pad.midi)}
             onPointerCancel={() => lift(pad.midi)}
-            style={{ left: `${left}%`, width: `${(100 / whites.length) * 0.62}%` }}
+            style={{
+              left: `${left}%`,
+              width: `${(100 / whites.length) * 0.62}%`,
+            }}
             className={`absolute top-0 z-10 flex h-[62%] -translate-x-1/2 items-end justify-center rounded-b-lg border border-black/40 pb-2 text-[10px] font-medium transition-colors ${
-              on ? "bg-accent text-background" : "bg-[#0a0b14] text-foreground/40 hover:bg-[#15182a]"
+              on
+                ? "bg-accent text-background"
+                : "bg-[#0a0b14] text-foreground/40 hover:bg-[#15182a]"
             }`}
           >
             <span className="pointer-events-none uppercase">{pad.key}</span>

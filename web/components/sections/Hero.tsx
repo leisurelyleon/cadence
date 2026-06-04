@@ -6,7 +6,10 @@ export function Hero() {
       id="hero"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
-      <div className="spectrum-glow pointer-events-none absolute inset-0" aria-hidden="true" />
+      <div
+        className="spectrum-glow pointer-events-none absolute inset-0"
+        aria-hidden="true"
+      />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <p className="mb-5 inline-block rounded-full border border-foreground/15 bg-background/30 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.25em] text-foreground/70 backdrop-blur-sm">

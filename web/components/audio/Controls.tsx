@@ -19,7 +19,15 @@ interface SliderProps {
   onChange: (value: number) => void;
 }
 
-function Slider({ label, value, min, max, step, display, onChange }: SliderProps) {
+function Slider({
+  label,
+  value,
+  min,
+  max,
+  step,
+  display,
+  onChange,
+}: SliderProps) {
   const handle = (event: ChangeEvent<HTMLInputElement>) => {
     onChange(parseFloat(event.target.value));
   };

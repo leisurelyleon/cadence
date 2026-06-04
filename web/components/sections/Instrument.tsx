@@ -30,7 +30,10 @@ export function Instrument() {
 
       <div className="rounded-3xl border border-foreground/10 bg-foreground/[0.03] p-5 backdrop-blur-sm sm:p-8">
         <div className="relative overflow-hidden rounded-2xl border border-foreground/10 bg-background/40">
-          <Visualizer getAnalyser={getAnalyser} className="block h-40 w-full sm:h-48" />
+          <Visualizer
+            getAnalyser={getAnalyser}
+            className="block h-40 w-full sm:h-48"
+          />
           {!ready && (
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
               <span className="rounded-full border border-foreground/15 bg-background/70 px-4 py-1.5 text-xs font-medium text-foreground/70 backdrop-blur-sm">
